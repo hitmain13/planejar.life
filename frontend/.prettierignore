@@ -1,0 +1,8 @@
+node_modules
+public
+scripts
+dist
+.next
+coverage
+.vscode
+.husky
