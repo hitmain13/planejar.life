@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { Button } from '.'; // Certifique-se de importar o componente Button apropriadamente
-
+import { Button } from '.'
 describe('Button Component', () => {
   it('should render the button with the correct label', () => {
     const label = 'Click me';
