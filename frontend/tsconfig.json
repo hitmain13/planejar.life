@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "types": [
+      "jest",
+      "@testing-library/jest-dom"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "useUnknownInCatchVariables": false,
+    "paths": {
+      "@/*": [
+        "./main/src/*"
+      ],
+      "@test/*": [
+        "./test/*"
+      ]
+    },
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": [
+    "main/next-env.d.ts",
+    "./types/*.d.ts",
+    "main/**/*.ts",
+    "main/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
