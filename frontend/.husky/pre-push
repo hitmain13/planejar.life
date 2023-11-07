@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/common.sh"
 
-npx --no-install 
+npx --no-install
 
-#npm typecheck
+npm typecheck
 #npm test
 npm run build
