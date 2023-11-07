@@ -9,7 +9,19 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "prepare": "husky install",
+    "typecheck": "tsc --project tsconfig.json"
+  },
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "main/**/*.{ts,tsx}": [
+      "npm lint"
+    ]
   },
   "dependencies": {
     "@types/jest": "^29.5.6",
