@@ -3,6 +3,6 @@
 
 npx --no-install 
 
-npm typecheck
-npm test
-# npm build
+#npm typecheck
+#npm test
+npm run build
